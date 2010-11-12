@@ -1,2 +1,202 @@
 @import "reset.css";
 @import "common.css";
+
+/* header */
+header#site-header {
+	margin:10px auto 10px;
+	overflow:hidden;
+	width:960px;
+	display:block;
+}
+
+header section#title-site {
+	border-right:1px solid #00bf54;
+	display:block;
+	float:left;
+	padding:0 12px 6px 0;
+	color: #42873a;
+	font-size: 18px;
+}
+
+nav {
+	width: 100%;
+	margin: 20px auto 20px;
+	text-align: center;
+}
+
+nav a {
+	font-family: "Museo", serif;
+	font-size: 16px;
+  display: inline-block;
+  padding: 3px 5px 3px;
+  text-decoration: none;
+  text-align: center;
+
+	width: 300px;
+	height: 30px;
+
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+
+  box-shadow: 1px 1px 0px #cccccc;
+  -moz-box-shadow: 1px 1px 0px #cccccc;
+  -webkit-box-shadow: 1px 1px 0px #cccccc;
+
+  font-weight: bold;
+  border: 2px solid #FFFFFF;
+  position: relative;
+  color: #FFFFFF;
+  background-image: -moz-linear-gradient(100% 100% 180deg, #cae459, #91b84a);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cae459), to(#91b84a));
+}
+
+/* post it */
+section {
+	padding-top: 15px;
+}
+
+section#welldonecontainer {
+	float: left;
+	width: 50%;
+}
+
+section#welldonecontainer header span{
+	color: #42873a;
+	font-size:26px;
+	padding-bottom: 10px;
+}
+
+section ul { list-style:none; }
+
+div#goodOption, div#badOption, section li {
+  display:inline;
+  float:left;
+  line-height:12px;
+  margin-left:10px;
+  margin-bottom:10px;
+	height: 100px;
+	width: 150px;
+	
+	border:3px solid #EEEEEE;
+	-moz-box-shadow: 1px 1px 0px #cccccc;
+  -webkit-box-shadow: 1px 1px 0px #cccccc;
+	
+	text-align: center;
+	vertical-align: middle;
+	font-family: "Museo", serif;
+	font-size: 15px;
+	padding-bottom: 2px;
+}
+
+div#goodOption, section#welldonecontainer li {
+  background: #bbe6b0;
+}
+
+div#badOption, section#baddonecontainer li {
+  background: #ea68d5;
+}
+
+section#baddonecontainer {
+	float: right;
+	width: 50%;
+}
+
+section#baddonecontainer header span{
+	color: red;
+	font-size:26px;
+}
+
+.selectedOption {
+	border:3px solid blue;
+}
+
+/* Footer */
+footer div#footer-content {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+footer div#footer-content section#thoughtworks {
+	border-right:1px solid #FFFFFF;
+	display:block;
+	float:left;
+	padding:5px 12px 6px 0;
+}
+
+#separador {
+  background-color:#42873a;
+  border:0 none;
+  clear:both;
+  color:#F1780C;
+  height:4px;
+  padding:0;
+}
+
+footer div#footer-content section#una {
+	border-left:1px solid #FFFFFF;
+	display:block;
+	float:right;
+	padding:5px 6px 12px 12px;
+}
+
+footer div#footer-content span {
+	padding:40px 0px 0px 50px;
+	color: #FFFFFF;
+}
+
+footer#site-footer {
+	background:#42873a;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:60px;
+}
+
+/* form */
+div#formContainer {
+  background: #FFF;
+
+  border: 3px solid #A5A5A5;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+
+  box-shadow: 0 10px 4px #BBB;
+  -moz-box-shadow: 0 4px 4px #BBB;
+  -webkit-box-shadow: 0 0px 5px #A5A5A5;
+
+  padding:5px 20px 20px 20px;
+  overflow: hidden;
+  margin:32px auto 30px;
+  width:960px;
+}
+
+div.field{
+  margin-bottom: 20px;
+  display: inline-block;
+	margin: 5px auto 5px;
+	width: 960px;
+}
+
+label {
+  font-weight: bold;
+  color: #666;
+	width: 100px;
+}
+
+textarea, input[type="text"], select {
+  background: white url(/images/input_bg.gif) repeat-x 50% 0%;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #CCC;
+  font-size: 18px;
+	font-family: "Museo", serif;
+}
+
+input[type="text"], select {
+  height: 30px;
+}

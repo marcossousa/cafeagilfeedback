@@ -3,12 +3,27 @@
 <head>
   <title>Feedback Café Ágil</title>
   <%= stylesheet_link_tag "layout", "scaffold" %>
-  <%= javascript_include_tag "lib/jquery", "lib/jquery-ui", "rails" %>
+  <%= javascript_include_tag "lib/jquery", "lib/jquery-ui", "rails", "app/application" %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+	<header id="site-header">
+		<section id="title-site">Café Ágil em Belo Horizonte</section> <span>Give us feedback!</span>
+	</header>
+	<hr id="separador"/>
+	<%= flash_messages %>
+	<%= yield %>
+	<footer id="site-footer">
+		<div id="footer-content">
+			<section id="thoughtworks">
+			 	<%= link_to image_tag("thoughtworks.png"), "http://www.thoughtworks.com" %>
+			</section>
+			<span> &copy; Copyright 2010 marcossousa </span>
+			<section id="una">
+				<%= link_to image_tag("una.png"), "http://www.una.br" %>
+			</section>
+		</div>
+	</footer>
+	<div style="height: 80px">&nbps;</div>
 </body>
 </html>

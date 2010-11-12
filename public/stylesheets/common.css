@@ -1,0 +1,19 @@
+@font-face {
+	font-family: Museo;
+	src: url('/fonts/museo-regular-webfont.woff');
+}
+
+h1 {
+	font-family: "Museo", serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #42873a;
+}
+
+footer, header, section, nav, .field {
+	border:0 none;
+	display:block;
+	margin:0;
+	outline:0 none;
+	padding:0;
+}

@@ -1,2 +1,25 @@
-<h1>Café Ágil em Belo Horizonte</h1>
-<p>Just initial view to feedback app</p>
+<nav>
+	<%= link_to 'Dê sua opnião!', new_feedback_path %>
+</nav>
+<section id="welldonecontainer">
+	<header>
+		<%= image_tag("welldone.png") %>
+		<span>O que foi bom?</span>
+		<ul>
+			<% @good.each do |feedback| %>
+			  <li><%= feedback.message %></li>
+			<% end %>
+		</ul>
+	</header>
+</section>
+<section id="baddonecontainer">
+	<header>
+		<%= image_tag("baddone.png") %>
+		<span>O que poderia ser melhor?</span>
+		<ul>
+			<% @bad.each do |feedback| %>
+			  <li><%= feedback.message %></li>
+			<% end %>
+		</ul>
+	</header>
+</section>

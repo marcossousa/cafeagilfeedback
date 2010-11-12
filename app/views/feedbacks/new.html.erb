@@ -1,0 +1,37 @@
+<div id="formContainer">
+	<h1>Dê a sua opnião</h1>
+	<%= error_messages_for @feedback %>
+	
+<%= form_for(@feedback) do |f| %>
+
+	<div class="field">
+		<%= f.hidden_field :feedback_type %>
+		<div id="goodOption" onclick="selectType('good')">Foi bom</div> 
+		<div id="badOption" onclick="selectType('bad')">Poderia ser melhor</div>
+	</div>
+
+  	<div class="field">
+     <%= f.text_area :message, :placeholder => "Sua mensagem em até 140 caracteres", :rows => 3, :cols => 70, :style => "width: 30em" %>
+   </div>
+
+	<div class="field">
+     <%= f.text_field :name, :placeholder => "Seu nome (opcional)", :style => "width: 30em" %>
+   </div>
+
+	<div class="field">
+     <%= f.text_field :email, :placeholder => "Seu e-mail (opcional)", :style => "width: 30em" %>
+   </div>
+
+  <div class="actions">
+    <%= f.submit %> <%= link_to 'Back', root_path %>
+  </div>
+<% end %>
+</div>
+<script type="text/javascript" language="JavaScript">
+function selectType(type) {
+	$('#feedback_feedback_type').val(type);
+	$('#goodOption').removeClass("selectedOption");
+	$('#badOption').removeClass("selectedOption");
+	$('#badOption').toggleClass("selectedOption");
+}
+</script>
