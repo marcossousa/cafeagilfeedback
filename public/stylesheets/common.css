@@ -17,3 +17,30 @@ footer, header, section, nav, .field {
 	outline:0 none;
 	padding:0;
 }
+
+#ribbon {
+-moz-box-shadow:0 0 1em #888888;
+-moz-transform:rotate(-45deg);
+background-color:#AA0000;
+bottom:2.25em;
+overflow:hidden;
+position:fixed;
+right:-3em;
+}
+
+#ribbon p {
+margin:0;
+padding:3px !important;
+}
+
+#ribbon a {
+border:1px solid #FFAAAA;
+color:white;
+display:block;
+font:bold 81.25% "Helvetiva Neue",Helvetica,Arial,sans-serif;
+margin:0.05em 0 0.075em;
+padding:0.5em 3.5em;
+text-align:center;
+text-decoration:none;
+text-shadow:0 0 0.5em #444444;
+}
