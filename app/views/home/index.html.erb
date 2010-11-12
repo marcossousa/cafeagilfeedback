@@ -7,7 +7,12 @@
 		<span>O que foi bom?</span>
 		<ul>
 			<% @good.each do |feedback| %>
-			  <li><%= feedback.message %></li>
+			  <li><%=feedback.message %>
+				<%if feedback.name != nil and feedback.twitter_id != nil %>
+					<br/><b>Por:</b><%=link_to feedback.name, "http://twitter.com/" + feedback.twitter_id%>
+				<%end%>
+				
+			  </li>
 			<% end %>
 		</ul>
 	</header>
@@ -18,7 +23,12 @@
 		<span>O que poderia ser melhor?</span>
 		<ul>
 			<% @bad.each do |feedback| %>
-			  <li><%= feedback.message %></li>
+			  <li>
+					<%= feedback.message %>
+					<%if feedback.name != nil and feedback.twitter_id != nil %>
+						<br/><b>Por:</b><%=link_to feedback.name, "http://twitter.com/" + feedback.twitter_id%>
+					<%end%>
+			  </li>
 			<% end %>
 		</ul>
 	</header>

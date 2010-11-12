@@ -19,7 +19,7 @@
    </div>
 
 	<div class="field">
-     <%= f.text_field :email, :placeholder => "Seu e-mail (opcional)", :style => "width: 30em" %>
+     <%= f.text_field :twitter_id, :placeholder => "Seu login no twitter (opcional)", :style => "width: 30em" %>
    </div>
 
   <div class="actions">
@@ -30,8 +30,8 @@
 <script type="text/javascript" language="JavaScript">
 function selectType(type) {
 	$('#feedback_feedback_type').val(type);
-	$('#goodOption').removeClass("selectedOption");
-	$('#badOption').removeClass("selectedOption");
-	$('#badOption').toggleClass("selectedOption");
+	$('#formContainer').removeClass("badOption");
+	$('#formContainer').removeClass("goodOption");
+	$('#formContainer').toggleClass(type + "Option");
 }
 </script>

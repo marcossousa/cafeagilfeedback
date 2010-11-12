@@ -3,7 +3,7 @@ class Feedback
   field :message
   field :feedback_type
   field :name
-  field :email
+  field :twitter_id
   field :created_at, :type => Date, :default => DateTime.new
   
   validates_length_of :message, :maximum => 140

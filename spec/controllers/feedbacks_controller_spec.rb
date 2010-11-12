@@ -39,10 +39,10 @@ describe FeedbacksController do
         assigns(:feedback).should be(mock_feedback)
       end
 
-      it "re-renders the 'new' template" do
+      it "re-renders the empty template" do
         Feedback.stub(:new) { mock_feedback(:save => false) }
         post :create, :feedback => {}
-        response.should render_template("new")
+        response.should render_template()
       end
     end
   end

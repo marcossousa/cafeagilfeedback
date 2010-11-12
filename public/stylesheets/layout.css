@@ -89,11 +89,11 @@ div#goodOption, div#badOption, section li {
 	padding-bottom: 2px;
 }
 
-div#goodOption, section#welldonecontainer li {
+div#goodOption, .goodOption, section#welldonecontainer li {
   background: #bbe6b0;
 }
 
-div#badOption, section#baddonecontainer li {
+div#badOption, .badOption, section#baddonecontainer li {
   background: #ea68d5;
 }
 
@@ -156,7 +156,6 @@ footer#site-footer {
 
 /* form */
 div#formContainer {
-  background: #FFF;
 
   border: 3px solid #A5A5A5;
   border-radius: 5px;
