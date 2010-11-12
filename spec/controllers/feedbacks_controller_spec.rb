@@ -15,6 +15,13 @@ describe FeedbacksController do
       assigns(:feedback).should be(mock_feedback)
     end
   end
+  
+  describe "GET index" do
+    it "redirect to new action" do
+      get :index
+      response.should redirect_to(new_feedback_path)
+    end
+  end
 
   describe "POST create" do
 

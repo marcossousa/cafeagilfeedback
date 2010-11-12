@@ -1,5 +1,9 @@
 class FeedbacksController < ApplicationController
   
+  def index
+    redirect_to new_feedback_path
+  end
+  
    def new
      @feedback = Feedback.new
      respond_with @feedback
