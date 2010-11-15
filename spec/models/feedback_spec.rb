@@ -55,4 +55,12 @@ describe Feedback do
     end
   end
   
+  context "default create date" do
+    it "should generate a current date" do
+      feedback.created_at.should be_nil
+      feedback.save!
+      feedback.created_at.should_not be_nil
+    end
+  end
+  
 end
