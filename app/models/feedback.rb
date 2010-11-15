@@ -13,10 +13,10 @@ class Feedback
   scope :good, where(:feedback_type => "good").desc(:created_at)
   scope :bad, where(:feedback_type => "bad").desc(:created_at)
   
-  before_create :generate_slug
+  before_create :generate_date
 
 protected
-  def generate_slug
+  def generate_date
     self.created_at = DateTime.now
   end
 end
