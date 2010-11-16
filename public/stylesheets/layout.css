@@ -51,6 +51,23 @@ nav a {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cae459), to(#91b84a));
 }
 
+/* separadores */
+#separador {
+  background-color:#42873a;
+  border:0 none;
+  clear:both;
+  color:#F1780C;
+  height:4px;
+  padding:0;
+}
+/* content page */
+#content {
+	display:block;
+	margin-bottom:65px;
+	overflow:hidden;
+	width:100%;
+}
+
 /* post it */
 section {
 	padding-top: 15px;
@@ -125,20 +142,12 @@ footer div#footer-content section#thoughtworks {
 	padding:5px 12px 6px 0;
 }
 
-#separador {
-  background-color:#42873a;
-  border:0 none;
-  clear:both;
-  color:#F1780C;
-  height:4px;
-  padding:0;
-}
-
 footer div#footer-content section#una {
 	border-left:1px solid #FFFFFF;
 	display:block;
 	float:right;
 	padding:5px 6px 12px 12px;
+	margin-right: 120px;
 }
 
 footer div#footer-content span {
@@ -148,8 +157,10 @@ footer div#footer-content span {
 
 footer#site-footer {
 	background:#42873a;
-	position:absolute;
-	bottom:0;
+	bottom: 0em;
+	overflow:hidden;
+	position:fixed;
+	right: 0em;
 	width:100%;
 	height:60px;
 }

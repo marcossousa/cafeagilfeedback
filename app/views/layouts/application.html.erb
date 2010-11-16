@@ -11,8 +11,10 @@
 		<section id="title-site">Café Ágil em Belo Horizonte</section> <span>Give us feedback!</span>
 	</header>
 	<hr id="separador"/>
-	<%= flash_messages %>
-	<%= yield %>
+	<div id="content">
+		<%= flash_messages %>
+		<%= yield %>
+	</div>
 	<footer id="site-footer">
 		<div id="footer-content">
 			<section id="thoughtworks">
@@ -24,7 +26,6 @@
 			</section>
 		</div>
 	</footer>
-	<div style="height: 80px">&nbsp;</div>
 	<div id="ribbon">
 		<p><a title="Fork me on GitHub!" rel="me" href="http://github.com/marcossousa/cafeagilfeedback/">Fork me on GitHub!</a></p>
 	</div>
